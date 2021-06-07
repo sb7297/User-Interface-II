@@ -186,6 +186,10 @@ footer {
 
 /* mobile styles */
 @media(max-width: 500px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+
     .big-img {
         height: 30vh;
     }
