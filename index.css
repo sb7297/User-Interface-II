@@ -1,0 +1,214 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+    
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    /* border: 1px solid grey; */
+}
+
+/* general styles */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h1, h2 {
+    font-family: Prata, serif;
+    text-align: center;
+    margin: 2%;
+    text-transform: uppercase;
+}
+
+/* navbar styles */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn {
+    padding: 1% 3%;
+    border: 2px solid black;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+}
+
+.home-btn {
+    color: white;
+    background-color: black;
+}
+
+/* intro section styles */
+.intro p {
+    width: 85%;
+    margin: auto;
+}
+
+/* big image styles */
+.big-img {
+    height: 50vh;
+    margin: 2% 0;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bontecou_Lake_Milky_Way_panorama.jpg/2560px-Bontecou_Lake_Milky_Way_panorama.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* project list styles */
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-imgs {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+}
+.project-img {
+    height: 70vh;
+    width: 24%;
+    background-position: center;
+    background-size: cover;
+}
+
+.img1 {
+    background-image: url("assets/img1.jpg");
+}
+
+.img2 {
+    background-image: url("assets/img2.jpg");
+}
+
+.img3 {
+    background-image: url("assets/img3.jpg");
+    background-position: 60%;
+}
+
+.img4 {
+    background-image: url("assets/img4.jpg");
+}
+
+.project-txt {
+    height: 70vh;
+    width: 23%;
+    display: flex;
+    align-items:center;
+}
+
+.project-txt p {
+    margin: 0 2%;
+}
+
+/* footer styles */
+footer {
+    background-color: lightslategray;
+    margin-top: 1%;
+    padding: 4%;
+    text-align:center;
+}
+
+/* tablet styles */
+@media(max-width: 800px) {
+    .projects {
+        flex-wrap: wrap;
+    }
+    .project-imgs {
+        width: 100%;
+    }
+    .project-txt {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        padding: 2% 4%;
+    }
+}
+
+/* mobile styles */
+@media(max-width: 500px) {
+    h2 {
+        font-size: 3.5rem;
+        margin-top: 4%;
+    }
+
+    .big-img {
+        height: 30vh;
+    }
+
+    .project-imgs {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .project-img {
+        height: 70vh;
+        width: 45%;
+        margin: 1% 0;
+    }
+
+    nav {
+        margin: auto;
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
