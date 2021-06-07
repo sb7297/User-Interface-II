@@ -108,7 +108,8 @@ nav {
     margin: 2% 0;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bontecou_Lake_Milky_Way_panorama.jpg/2560px-Bontecou_Lake_Milky_Way_panorama.jpg");
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* project list styles */
