@@ -186,5 +186,14 @@ footer {
 
 /* mobile styles */
 @media(max-width: 500px) {
+    .project-imgs {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 
+    .project-img {
+        height: 70vh;
+        width: 45%;
+        margin: 1% 0;
+    }
 }
