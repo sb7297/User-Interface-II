@@ -167,3 +167,24 @@ footer {
     padding: 4%;
     text-align:center;
 }
+
+/* tablet styles */
+@media(max-width: 800px) {
+    .projects {
+        flex-wrap: wrap;
+    }
+    .project-imgs {
+        width: 100%;
+    }
+    .project-txt {
+        height: auto;
+        width: 100%;
+        text-align: center;
+        padding: 2% 4%;
+    }
+}
+
+/* mobile styles */
+@media(max-width: 500px) {
+
+}
