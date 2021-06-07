@@ -202,7 +202,12 @@ footer {
     nav {
         margin: auto;
         flex-direction: column;
-        width: 100%;
+        width: 30%;
         align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
     }
 }
