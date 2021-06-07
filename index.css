@@ -186,6 +186,10 @@ footer {
 
 /* mobile styles */
 @media(max-width: 500px) {
+    .big-img {
+        height: 30vh;
+    }
+
     .project-imgs {
         flex-wrap: wrap;
         justify-content: space-evenly;
