@@ -182,6 +182,7 @@ footer {
 @media(max-width: 500px) {
     h2 {
         font-size: 3.5rem;
+        margin-top: 4%;
     }
 
     .big-img {
