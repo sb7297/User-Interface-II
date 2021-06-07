@@ -198,4 +198,11 @@ footer {
         width: 45%;
         margin: 1% 0;
     }
+
+    nav {
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
 }
